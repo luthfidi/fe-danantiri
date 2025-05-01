@@ -4,13 +4,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { XellarKitProvider, defaultConfig, lightTheme } from "@xellar/kit";
 import { liskSepolia } from "viem/chains";
 
-const walletConnectProjectId = import.meta.env.VITE_WALLET_CONNECT_PROJECT_ID;
-
 // eslint-disable-next-line react-refresh/only-export-components
 export const config = defaultConfig({
   appName: "Xellar",
-  walletConnectProjectId,
-  xellarAppId: import.meta.env.VITE_XELLAR_APP_ID,
+  walletConnectProjectId: "d0d8de337b3329dd5088cfc1040dc502",
+  xellarAppId: "3641a707-a5be-47f7-864e-9739366c142b",
   xellarEnv: "sandbox",
   chains: [liskSepolia],
 }) as Config;
